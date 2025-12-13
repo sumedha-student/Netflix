@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif ;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/bg.jpg");
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1300px,50px);/*Zoom in effect  remains same for all responsive screens*/
+}
+.main .box{  
+    height: 80vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 60vw;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 134px;
+    position: relative;
+    z-index: 10; /*POPS OUT=appears in front of others with lower index */
+}
+nav button{
+     position: relative;
+    z-index: 10; /*POPS OUT */
+}
+.hero{
+    height:calc(100%-62px);/*Because height of parent is defined*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;/*Such that it pops out*/
+    font-family: sans-serif;
+    gap: 23px;
+    padding:0 30px;
+}
+.hero> :first-child{ /*> = Because it was applied for place holder as itwas fitst child of div */
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;/*To make it responsive*/
+}
+.hero> :nth-child(2){
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;/*To make it responsive*/
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;/*To make it responsive*/
+}
+.separation{
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(248, 243, 243, 0.027);
+    color: white;
+    border: 1px solid rgba(246,238,238,0.7);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight:500 ;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 16px;
+}
+.main input{
+    color: white;
+    padding: 11px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.7);
+}
+.first{
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    max-height: 100vh;
+}
+@media screen and (max-width: 1300px) {
+     .first{
+        flex-wrap: wrap;
+    }
+}
+.second{
+   top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    max-height: 100vh; 
+}
+.third{
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    max-height: 100vh;
+}
+.fourth{
+    top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    max-height: 100vh;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    /* width: 40vw; RESPONSIVENESS==PIXELS*/
+    width: 510px;
+    z-index: 10;/*To appear above video*/
+    position: relative;
+}
+.secImg video{
+   position: absolute;
+    right: 60px;
+    top: 44px;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.sec video{
+    position: absolute;
+    top: 15px;
+    right: 104px;
+}
+.third img{
+    position: relative;
+    top: -282px;
+}
+.separationA1{
+    position: relative;
+    top: 150px;
+    /* top: 300px; */
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+.separationA2{
+    position: relative;
+    top: 250px;
+    /* top: 300px; */
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+.separationA3{
+    position: relative;
+    top: 350px;
+    /* top: 300px; */
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+.separationA4{
+    position: relative;
+    top: 450px;
+    /* top: 300px; */
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faq h2{
+    color: white;
+    position: relative;
+    top: 500px;
+    text-align: center;
+    font-size: 48px;
+    font-family: sans-serif;
+}
+.faqbox{
+transition: all 1s ease-out;
+top: 500px;
+position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 24px;
+ margin:34px auto;
+ max-width: 60vw;
+ background-color: #2d2d2d;
+ cursor: pointer;
+ font-size: 24px;
+ font-family: sans-serif;
+ font-weight: 400;
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+/* .faqbox svg{
+    filter: invert(1);
+} */
+footer{
+    position: relative;
+    top: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.foot a{
+    color: white;
+    font-size: 14px;
+}
+.separationf{
+    position: relative;
+    top: 600px;
+    height: 7px;
+    background-color: rgb(46, 45, 45);
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        max-width: 90vw; /*Because netflix symbol and sign in symbol were colliding on oter devices so increasing width*/
+        gap:90px;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 305px; /*To get padding between screen and images in mobile devices*/
+    }
+    .secImg video{
+      
+    width: 230px;
+    top: -34px;
+    right: 32px;
+    }
+    .sec video{
+        right: 58px;
+    width: 195px;
+    }
+    
+    .hero> :nth-child(1){ /*To fit text within bg image in small devices*/
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+    .hero-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    gap: 16px;
+}
+footer{
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    /* max-width: 80vw; */
+}
+}
+/* @media screen and ( min-width:700px) and (max-width: 1200px){
+    .separation{position: relative;
+    top: -50px;}
+} */
+
+/* position: relative;
+    z-index: 10; */
+    /* 380 330 absolute */
